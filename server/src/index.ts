@@ -7,7 +7,7 @@ import { getAllDocuments, findOrCreateDocument, updateDocument } from "./control
 const PORT = Number(process.env.PORT || 3000) ;
 
 /** Connect to MongoDB */
-mongoose.connect(process.env.DATABASE_URL || "mongodb+srv://yashrahadve:89LRtFhRcZuNN1dt@cluster0.i08s4.mongodb.net/", { dbName: "Google-Docs" })
+mongoose.connect(process.env.DATABASE_URL || "", { dbName: "Google-Docs" })
 .then(() => { console.log("Database connected.");})
 .catch((error) => { console.log("DB connection failed. " + error);}) ;
 
